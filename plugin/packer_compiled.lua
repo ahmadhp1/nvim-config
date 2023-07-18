@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/home/ahmad/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["awesome-flutter-snippets"] = {
+    loaded = true,
+    path = "/home/ahmad/.local/share/nvim/site/pack/packer/start/awesome-flutter-snippets",
+    url = "https://github.com/Neevash/awesome-flutter-snippets"
+  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/home/ahmad/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",

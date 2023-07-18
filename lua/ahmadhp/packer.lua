@@ -45,6 +45,7 @@ use {
 		'stevearc/dressing.nvim', -- optional for vim.ui.select
 	},
 }
+use 'Neevash/awesome-flutter-snippets'
 use 'neovim/nvim-lspconfig'
 use 'simrat39/rust-tools.nvim'
 

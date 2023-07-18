@@ -2,6 +2,9 @@ local lsp = require('lsp-zero').preset({})
 
 lsp.on_attach(function(client, bufnr)
   lsp.default_keymaps({buffer = bufnr})
+  vim.keymap.set("n", "<leader>ca", function()
+     vim.lsp.buf.code_action()
+ end)
 end)
 lsp.skip_server_setup({'rust_analyzer'})
 
@@ -29,7 +32,7 @@ local cmp_action = require('lsp-zero').cmp_action()
 
 cmp.setup({
   mapping = {
-    ['<C-y>'] = cmp.mapping.confirm({select = false}),
+    ['<Tab>'] = cmp.mapping.confirm({select = false}),
     ['<C-Space>'] = cmp.mapping.complete(),
   }
 })
