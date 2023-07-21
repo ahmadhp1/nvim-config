@@ -45,6 +45,7 @@ use {
 		'stevearc/dressing.nvim', -- optional for vim.ui.select
 	},
 }
+use 'ThePrimeagen/harpoon'
 use 'Neevash/awesome-flutter-snippets'
 use 'neovim/nvim-lspconfig'
 use 'simrat39/rust-tools.nvim'
@@ -52,6 +53,7 @@ use 'simrat39/rust-tools.nvim'
 -- Debugging
 use 'nvim-lua/plenary.nvim'
 use 'mfussenegger/nvim-dap'
+    
 
 use("christoomey/vim-tmux-navigator")
 

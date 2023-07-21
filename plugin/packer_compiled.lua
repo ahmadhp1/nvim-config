@@ -99,6 +99,11 @@ _G.packer_plugins = {
     path = "/home/ahmad/.local/share/nvim/site/pack/packer/start/flutter-tools.nvim",
     url = "https://github.com/akinsho/flutter-tools.nvim"
   },
+  harpoon = {
+    loaded = true,
+    path = "/home/ahmad/.local/share/nvim/site/pack/packer/start/harpoon",
+    url = "https://github.com/ThePrimeagen/harpoon"
+  },
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "/home/ahmad/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
