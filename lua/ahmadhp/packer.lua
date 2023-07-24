@@ -55,6 +55,7 @@ return require('packer').startup(function(use)
     use 'mfussenegger/nvim-dap'
 
     use("christoomey/vim-tmux-navigator")
+    use("tpope/vim-commentary")
     use({
         "kylechui/nvim-surround",
         config = function()
