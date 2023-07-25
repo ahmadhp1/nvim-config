@@ -50,9 +50,18 @@ return require('packer').startup(function(use)
     use 'neovim/nvim-lspconfig'
     use 'simrat39/rust-tools.nvim'
 
+
+    use 'rhysd/vim-grammarous'
+
+
     -- Debugging
     use 'nvim-lua/plenary.nvim'
     use 'mfussenegger/nvim-dap'
+    use 'leoluz/nvim-dap-go'
+    use 'rcarriga/nvim-dap-ui'
+    use 'theHamsta/nvim-dap-virtual-text'
+    use 'nvim-telescope/telescope-dap.nvim'
+
 
     use("christoomey/vim-tmux-navigator")
     use("tpope/vim-commentary")

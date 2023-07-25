@@ -16,7 +16,24 @@ local dart_lsp = lsp.build_options('dartls', {})
 require('flutter-tools').setup({
     lsp = {
         capabilities = dart_lsp.capabilities
-    }
+    },
+    debugger = {
+        enabled = true,
+        run_via_dap = false,
+        register_configurations = function(_)
+            print(" hello ");
+            require("dap").configurations.dart = {
+                {
+                    name = "main_dev",
+                    cwd = "${workspaceFoler}",
+                    program = "lib/main_dev.dart",
+                    request = "launch",
+                    type = "dart",
+                }
+            }
+            require("dap.ext.vscode").load_launchjs()
+        end,
+    },
 })
 
 local rust_tools = require('rust-tools')
