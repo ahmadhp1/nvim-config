@@ -19,19 +19,19 @@ require('flutter-tools').setup({
     },
     debugger = {
         enabled = true,
-        run_via_dap = false,
+        run_via_dap = true,
         register_configurations = function(_)
-            print(" hello ");
             require("dap").configurations.dart = {
                 {
-                    name = "main_dev",
-                    cwd = "${workspaceFoler}",
-                    program = "lib/main_dev.dart",
-                    request = "launch",
+                    name = "Dart: Launch",
                     type = "dart",
-                }
+                    request = "launch",
+                    program = "${workspaceFolder}/lib/main.dart",
+                    cwd = "${workspaceFolder}",
+                    args = {},
+                },
             }
-            require("dap.ext.vscode").load_launchjs()
+            -- require("dap.ext.vscode").load_launchjs()
         end,
     },
 })

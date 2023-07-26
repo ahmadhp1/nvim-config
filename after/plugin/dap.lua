@@ -1,5 +1,4 @@
--- local mark = require("harpoon.mark")
--- local ui = require("harpoon.ui")
+-- local mark = require("harpoon.mark") local ui = require("harpoon.ui")
 
 -- vim.keymap.set("n", "<leader>a", mark.add_file)
 
@@ -12,7 +11,7 @@ vim.keymap.set("n", "<F12>", dap.step_out)
 vim.keymap.set("n", "<leader>b", dap.toggle_breakpoint)
 vim.keymap.set("n", "<leader>dr", dap.repl.open)
 
-require("dap-go").setup({
-    on_attach = function()
-    end
-})
+local dapui = require("dapui")
+dapui.setup()
+
+vim.keymap.set("n", "<C-b>", dapui.toggle)
