@@ -37,7 +37,6 @@ vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition)
 vim.keymap.set("n", "<leader>h", vim.lsp.buf.hover)
 vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float)
-vim.keymap.set("n", "<leader>w", ":w<CR>")
 
 vim.keymap.set("n", "<A-k>", "<cmd>cnext<CR>zz")
 vim.keymap.set("n", "<A-j>", "<cmd>cprev<CR>zz")
@@ -59,4 +58,3 @@ end)
 vim.keymap.set("n", "<leader>pb", vim.diagnostic.setqflist)
 
 vim.keymap.set("n", "<A-,>", vim.lsp.buf.code_action)
-
