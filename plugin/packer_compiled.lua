@@ -215,6 +215,11 @@ _G.packer_plugins = {
     path = "/home/ahmad/.local/share/nvim/site/pack/packer/start/vim-grammarous",
     url = "https://github.com/rhysd/vim-grammarous"
   },
+  ["vim-signify"] = {
+    loaded = true,
+    path = "/home/ahmad/.local/share/nvim/site/pack/packer/start/vim-signify",
+    url = "https://github.com/mhinz/vim-signify"
+  },
   ["vim-tmux-navigator"] = {
     loaded = true,
     path = "/home/ahmad/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator",
